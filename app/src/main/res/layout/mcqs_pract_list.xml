@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colortextwhite">
+
+                    <TextView
+                        android:id="@+id/tvQno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/tvQuestionText"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignRight="@+id/tvQuestionText"
+                        android:layout_below="@+id/progressBar2"
+                        android:paddingLeft="2dp"
+                        android:text="Q.No. 1"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/tvQMarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/tvQuestionText"
+
+                        android:layout_alignRight="@+id/tvQuestionText"
+                        android:layout_below="@+id/progressBar2"
+                        android:paddingLeft="2dp"
+                        android:text="Q. Mark(s) 1"
+                        android:textColor="@color/colorPrimaryDark" />
+                    <TextView
+                        android:id="@+id/tvQuestionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="11dp"
+                        android:text="What is the name of your Country ?"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:id="@+id/space2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvQno"
+                        android:layout_toLeftOf="@+id/tvQuestionText"
+                        android:layout_toStartOf="@+id/tvQuestionText" />
+
+                    <RadioGroup
+                        android:id="@+id/rdbtnOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+
+
+                        android:layout_below="@+id/tvQuestionText">
+
+                        <RadioButton
+                            android:id="@+id/rdb1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+
+                            android:checked="true"
+                            android:text="Pakistan, We are aware of reports that the Pakistani government has taken action to block Twitter service, as well as other social media services, and that users are having difficulty using Twitter in Pakistan."
+                            android:textColor="@android:color/background_dark" />
+
+
+                        <RadioButton
+                            android:id="@+id/rdb2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Iran"
+                            android:textColor="@android:color/background_dark" />
+
+                        <RadioButton
+                            android:id="@+id/rdb3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Afghanistan"
+                            android:textColor="@android:color/background_dark" />
+
+                        <RadioButton
+                            android:id="@+id/rdb4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="India"
+                            android:textColor="@android:color/background_dark" />
+
+                        <RadioButton
+                            android:id="@+id/rdb5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="India"
+                            android:textColor="@android:color/background_dark" />
+
+                        <RadioButton
+                            android:id="@+id/rdb6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="India"
+                            android:textColor="@android:color/background_dark" />
+
+                        <RadioButton
+                            android:id="@+id/rdb7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="India"
+                            android:textColor="@android:color/background_dark" />
+
+                        <RadioButton
+                            android:id="@+id/rdb8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="India"
+                            android:textColor="@android:color/background_dark" />
+                    </RadioGroup>
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp"
+                            android:id="@+id/spac3"
+                            android:layout_weight="2" />
+
+
+
+                        <Button
+                            android:id="@+id/btnExp"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_below="@+id/rdbtnOption"
+                            android:background="@color/colorPrimaryDark"
+                            android:text="Explanation"
+                            android:textColor="@color/colortextwhite" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp"
+                            android:layout_below="@id/btnExp"
+                            android:id="@+id/space1"
+                            android:layout_weight="2" />
+
+                        <Button
+                            android:id="@+id/btnRef"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_below="@+id/space1"
+                            android:background="@color/colorPrimary"
+                            android:text="Reference"
+                            android:textColor="@color/colortextwhite" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp"
+                            android:id="@+id/space4"
+                            android:layout_below="@+id/btnRef"
+                            android:layout_weight="2" />
+
+                        <Button
+                            android:id="@+id/btnReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorcancel"
+                            android:text="Report"
+                            android:visibility="gone"
+                            android:layout_below="@id/space4"
+                            android:textColor="@color/colortextwhite" />
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/tvAdminId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/rdbtnOption"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvAdminName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/rdbtnOption"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvAdminEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSubjectName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvTestName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvExplanationText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvReference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvop1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/tvop2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvop3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvop4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvop5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvop6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvop7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvop8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvOption8Correct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvOption7Correct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvOption6Correct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvOption5Correct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvOption4Correct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvOption3Correct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvOption2Correct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvOption1Correct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/tvuserselectedoption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvMcqsQuestionId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvIsusercorrect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvIsuserAttempt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvisExplained"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvexp_check_staff_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvexp_check_staff_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvexp_check_staff_qual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvexp_check_staff_acc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvstaff_exp_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvpagecount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvedate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvTestId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSecId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSecMergeTestId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvisNegativeMarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvSpecMarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/space2"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

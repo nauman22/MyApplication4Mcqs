@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCatIcon"
+                android:layout_width="120dp"
+
+                android:layout_height="160dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCatName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CategoryName"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/tvTagLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Midterm,FinalTerm,Quizes,Viva" />
+
+
+            <TextView
+                android:id="@+id/tvTotalMcqs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TotalMcqs:" />
+
+            <TextView
+                android:id="@+id/tvTotalTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Subject Tests" />
+
+            <TextView
+                android:id="@+id/tvTotalSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subjects" />
+
+            <TextView
+                android:id="@+id/CatId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CatId"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnCatid"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Open"
+                android:textColor="@color/colortextwhite"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/rbCat"
+            android:stepSize=".5" />
+
+        <TextView
+            android:text="Category Purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCatPurpose" />
+
+        <TextView
+            android:text="CatDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCatDesc" />
+    </LinearLayout>
+</LinearLayout>

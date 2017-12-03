@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/ivTestIcon"
+                android:layout_width="120dp"
+
+                android:layout_height="120dp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTestName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test Name"
+                android:textSize="19sp" />
+
+           <!-- <TextView
+                android:id="@+id/tvTagLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Midterm,FinalTerm,Quizes,Viva" />
+-->
+
+            <TextView
+                android:id="@+id/tvTotalMcqs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TotalMcqs:" />
+            <TextView
+                android:id="@+id/tvPassPercent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Passing percentage:" />
+
+
+
+            <TextView
+                android:id="@+id/TestId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="TestId"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnPractice"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/colorPrimary"
+                android:padding="12dp"
+                android:text="SOLVED MCQS"
+                android:textColor="@color/colortextwhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorcancel"
+                android:padding="12dp"
+                android:text="START ONLINE TEST"
+                android:textColor="@color/colortextwhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Test Purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTestPurpose" />
+        <TextView
+            android:text="Test Instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTestInstruction" />
+        <TextView
+            android:text="TestDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTestDesc" />
+
+        <TextView
+            android:id="@+id/tvIsmultiple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>
